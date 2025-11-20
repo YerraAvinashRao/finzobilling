@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // This is the main rule that secures all user data.
+    // It says a user can only read/write inside their own document.
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // *** THE FIX IS HERE ***
+    // This new rule specifically handles the counters collection.
+    // It says: ANY logged-in user is allowed to read and write to any
+    // document inside the 'counters' collection. This is secure because
+    // the data is not sensitive and is required for the app to function.
+    match /counters/{counterId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

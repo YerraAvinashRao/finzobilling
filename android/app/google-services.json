@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "574104760009",
+    "project_id": "finzobilling-app",
+    "storage_bucket": "finzobilling-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574104760009:android:cfaf6b922630ca39852718",
+        "android_client_info": {
+          "package_name": "com.example.finzobilling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574104760009-t8uc0uriv6dgor8rgmv8v56kvd317hfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finzobilling",
+            "certificate_hash": "d7e08b054c289b6d363f7ee0a72526ac8df3ed19"
+          }
+        },
+        {
+          "client_id": "574104760009-75c4chup1shrqoiaf221vkve3jd0cb66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAwexAZWUl9Rh4i0nqgioJaCGiyq4KcBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574104760009-75c4chup1shrqoiaf221vkve3jd0cb66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
